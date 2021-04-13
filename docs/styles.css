@@ -3,3 +3,84 @@ body {
     color: #FFFFFF;
 }
 
+h6 {
+    border: 1px white solid;
+    float: left;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 9px;
+    
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin: 32.62px 2%;
+    padding: 9px;
+    float: right;
+
+}
+
+nav {
+    width: 90%;
+    margin: auto; 
+}
+
+.main {
+    clear: both;
+    display: grid;
+    grid-template-columns: auto 12% 55%;
+    grid-template-rows: auto;
+    width: 93%;
+    margin: auto;
+    
+}
+h2 {
+    font-size: 48px;
+}
+#text {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 15%;
+    font-size: 24px;
+    padding: 27% 0;
+}
+
+#room1 {
+    margin-top: 10%;
+    width: 100%;
+    
+}
+
+#readmore {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+#byAliza {
+    height: 180px;
+    width: 410px;
+    background-color: black;
+    font-size: 24px;
+    grid-column: 3 / span 1;
+    grid-row: 1 / span;
+    margin-top: -50%;
+    margin-left: 45%;
+    
+}
+
+
+@media only screen and (max-width: 900px) {
+    .main {
+        grid-template-columns: auto;  
+    }
+
+    #text, #room1 {
+        margin-top: 0%;
+        padding: 2.5% 0%;
+    }
+
+}

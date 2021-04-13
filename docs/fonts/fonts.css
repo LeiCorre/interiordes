@@ -1,24 +1,46 @@
 @font-face {
     font-family: Lora;
-    src: url(./fonts/Lora-VariableFont_wght.ttf);
+    src: url(./Lora-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: LoraItalics;
-    src: url(./fonts/Lora-Italic-VariableFont_wght.ttf);
+    src: url(./Lora-Italic-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: MontserratBold;
-    src: url(./fonts/Montserrat-Bold.ttf);
+    src: url(./Montserrat-Bold.ttf);
 }
 
 @font-face {
     font-family: MontserratLight;
-    src: url(./fonts/Montserrat-Light.ttf);
+    src: url(./Montserrat-Light.ttf);
 }
 
 @font-face {
     font-family: MontserratMedium;
-    src: url(./fonts/Montserrat-Medium.ttf);
+    src: url(./Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: crimsonPro;
+    src: url(./CrimsonPro-VariableFont_wght.ttf);
+}
+
+h6 {
+    font-family: crimsonPro;
+}
+
+nav > a, #text {
+    font-family: MontserratLight;
+}
+
+h2 {
+    font-family: Lora;
+    font-weight: 500;
+}
+
+#readmore {
+    font-family: MontserratMedium;
 }
