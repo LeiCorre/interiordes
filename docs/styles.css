@@ -9,30 +9,32 @@ h6 {
     font-weight: 400;
     font-size: 14px;
     padding: 9px;
-    
+    margin-left: 5%;
 }
 
 nav > a {
     text-decoration: none;
     color: white;
     font-size: 18px;
-    margin: 32.62px 2%;
-    padding: 9px;
+    margin: 32.62px -5% 32.62px 10%;
+    padding: 0px 9px;
     float: right;
 
 }
 
 nav {
-    width: 90%;
-    margin: auto; 
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
 }
 
 .main {
     clear: both;
     display: grid;
-    grid-template-columns: auto 12% 55%;
+    grid-template-columns: auto 13% 54%;
     grid-template-rows: auto;
-    width: 93%;
+    width: 90%;
     margin: auto;
     
 }
@@ -63,14 +65,70 @@ h2 {
 #byAliza {
     height: 180px;
     width: 410px;
-    background-color: black;
+    background-color: #181719;
     font-size: 24px;
     grid-column: 3 / span 1;
     grid-row: 1 / span;
-    margin-top: -50%;
-    margin-left: 45%;
-    
+    margin-top: -6%;
+    margin-left: 18%; 
+    position: absolute;
+    padding: 2%;
+    filter: drop-shadow(0px 5px 3px black)
 }
+
+#Aliza {
+    width: 15%;
+    border-radius: 100%;
+    border: 5px black solid;
+    float: left;
+    padding-right: 3px;
+}
+
+#Altext1 {
+    font-size: 14px;
+}
+
+#Altext2 {
+    font-size: 12px;
+    color: #828282;
+}
+
+#hamburger {
+    margin: 32.62px 5%;
+    float: right;
+}
+
+#close {
+    margin: 32.62px -5%;
+    float: right;
+}
+
+.opened {
+    overflow: visible;
+    height: 100%;
+}
+
+.closed {
+    overflow: hidden; 
+    height: 0px;
+}
+
+.iconVisible {
+    overflow: visible;
+    width: 36px;
+}
+
+.iconInvisible {
+    overflow: hidden; 
+    width: 0px;
+    padding: 0px;
+    border: none;
+}
+
+.widthmenu {
+    width: 100%;
+}
+
 
 
 @media only screen and (max-width: 900px) {
@@ -82,5 +140,29 @@ h2 {
         margin-top: 0%;
         padding: 2.5% 0%;
     }
+
+}
+
+@media only screen and (max-width: 715px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        margin: 0%;
+        overflow: hidden;
+        width: 0px;
+        height: 0px;
+        padding-top: 25%;
+    }
+
+    nav > a {
+       width: 100%;
+       text-align: center;
+       margin: 5% 0%;
+       
+    }
+
+    
+
 
 }

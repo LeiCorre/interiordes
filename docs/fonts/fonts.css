@@ -44,3 +44,12 @@ h2 {
 #readmore {
     font-family: MontserratMedium;
 }
+
+#Altext1, #Altext2 {
+    font-family: MontserratLight;
+}
+
+#Altext3 {
+    font-family: Lora;
+    font-weight: 700;
+}

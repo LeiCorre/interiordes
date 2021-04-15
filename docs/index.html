@@ -3,6 +3,8 @@
   <head>
     <link rel='stylesheet' href='./fonts/fonts.css'>
     <link rel='stylesheet' href='./styles.css'>
+    <script src='./script.js'></script>
+  
  
     <meta charset="utf-8" />
     <meta
@@ -15,12 +17,14 @@
 
   </head>
   <body>
+    <h6>THIS INTERIOR</h6>
+    <img id='hamburger' src='./menu_white_24dp.svg' alt='menu' width='36px' onclick="openMenu()">
+    <img id='close' class='iconInvisible' src='./close_white_24dp.svg' alt='close' width='36px' onclick="closeMenu()">
     <nav>
-      <h6>THIS INTERIOR</h6>
-      <a href='./contact.html'>Contact</a>
-      <a href='./about.html'>About</a>
-      <a href='./collection.html'>Collection</a>
       <a href='./index.html'>Home</a>
+      <a href='./collection.html'>Collection</a>
+      <a href='./about.html'>About</a>
+      <a href='./contact.html'>Contact</a>
     </nav>
     <div class='main'>
       <div id='text'>
@@ -31,8 +35,26 @@
       <div id='spacer'></div>
       <div id='pics'>
         <img id='room1' src='./photo1.png' >
+        <div id='byAliza'>
+          <img id='Aliza' src='./photo2.png' alt='Aliza'>
+          <p id='Altext1'>Aliza Webber</p>
+          <p id='Altext2'>Interior designer</p>
+          <p id='Altext3'>Designed in 2020 by <br> Aliza Webber</p>
+        </div>
       </div>
       
     </div>
+    <script>if (screen.width > 715) {document.getElementById('hamburger').setAttribute('class', 'iconInvisible')}
+      window.addEventListener('resize', function adjust () {
+        closeMenu();
+        if (screen.width > 715) {
+          document.getElementById('hamburger').setAttribute('class', 'iconInvisible')
+        partialOpen()
+        } else {
+          document.getElementById('hamburger').setAttribute('class', 'iconVisible');
+      
+        }
+      })
+    </script>
   </body>
 </html>
