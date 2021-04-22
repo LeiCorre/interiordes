@@ -1,4 +1,24 @@
+function linksFormat () {
+    let link1 = document.getElementById('link1');
+    let link2 = document.getElementById('link2');
+    let link3 = document.getElementById('link3');
+    let link4 = document.getElementById('link4');
+    link1.setAttribute('class', 'visibleNava');
+    link2.setAttribute('class', 'visibleNava');
+    link3.setAttribute('class', 'visibleNava');
+    link4.setAttribute('class', 'visibleNava');
+}
 
+function linksUnformat () {
+    let link1 = document.getElementById('link1');
+    let link2 = document.getElementById('link2');
+    let link3 = document.getElementById('link3');
+    let link4 = document.getElementById('link4');
+    link1.removeAttribute('class', 'visibleNava');
+    link2.removeAttribute('class', 'visibleNava');
+    link3.removeAttribute('class', 'visibleNava');
+    link4.removeAttribute('class', 'visibleNava');
+}
 
 
 function closeMenu () {
@@ -6,16 +26,10 @@ function closeMenu () {
     let close = document.getElementById('close');
     let hamburger = document.getElementById('hamburger');
     let h6 = document.getElementsByTagName('h6')[0];
-    menu.removeAttribute('class', 'opened');
-    menu.setAttribute('class', 'closed')
-    menu.removeAttribute('style', 'height:' + screen.height + 'px');
-    menu.removeAttribute('class', 'widthmenu');
-    h6.removeAttribute('class', 'iconInvisible');
-    close.removeAttribute('class', 'iconVisible')
-    close.setAttribute('class', 'iconInvisible')
-    hamburger.removeAttribute('class', 'iconInvisible')
-    hamburger.setAttribute('class', 'iconVisible')
-    
+    menu.removeAttribute('class', 'menu-visible');
+    hamburger.removeAttribute('class', 'hidden');
+    close.removeAttribute('class', 'visible');
+    linksUnformat();
 }
 
 function openMenu () {
@@ -23,19 +37,9 @@ function openMenu () {
     let close = document.getElementById('close');
     let hamburger = document.getElementById('hamburger');
     let h6 = document.getElementsByTagName('h6')[0];
-    menu.removeAttribute('class', 'closed');
-    menu.setAttribute('class', 'opened');
-    menu.setAttribute('style', 'height:' + screen.height + 'px');
-    menu.setAttribute('class', 'widthmenu');
-    h6.setAttribute('class', 'iconInvisible');
-    hamburger.removeAttribute('class', 'iconVisible')
-    hamburger.setAttribute('class', 'iconInvisible')
-    close.removeAttribute('class', 'iconInvisible')
-    close.setAttribute('class', 'iconVisible')
+    menu.setAttribute('class', 'menu-visible');
+    hamburger.setAttribute('class', 'hidden');
+    close.setAttribute('class', 'visible');
+    linksFormat();
 }
 
-function partialOpen() {
-    let menu = document.getElementsByTagName('nav')[0];
-    menu.removeAttribute('class', 'closed');
-    menu.setAttribute('class', 'opened');
-}

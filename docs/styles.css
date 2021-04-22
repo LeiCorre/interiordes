@@ -17,16 +17,17 @@ nav > a {
     color: white;
     font-size: 18px;
     margin: 32.62px -5% 32.62px 10%;
-    padding: 0px 9px;
+    padding: 10px 1px;
     float: right;
 
 }
 
 nav {
-    width: 50%;
+    
     margin: auto;
     display: flex;
     flex-direction: row;
+    float: right;
 }
 
 .main {
@@ -38,9 +39,11 @@ nav {
     margin: auto;
     
 }
+
 h2 {
     font-size: 48px;
 }
+
 #text {
     display: flex;
     flex-direction: column;
@@ -79,7 +82,7 @@ h2 {
 #Aliza {
     width: 15%;
     border-radius: 100%;
-    border: 5px black solid;
+    border: 5px #181719 solid;
     float: left;
     padding-right: 3px;
 }
@@ -96,40 +99,80 @@ h2 {
 #hamburger {
     margin: 32.62px 5%;
     float: right;
+    visibility: hidden;
 }
 
 #close {
     margin: 32.62px -5%;
     float: right;
+    visibility: hidden;
 }
 
-.opened {
+.hidden {
+    visibility: hidden !important;
+}
+
+.visible {
+    visibility: visible !important;
+}
+
+.visibleNava {
     overflow: visible;
-    height: 100%;
+    height: auto;
+    padding-bottom: 10px;
 }
 
-.closed {
-    overflow: hidden; 
-    height: 0px;
+.menu-visible {
+    padding-top: 25%;
+    visibility: visible !important;
 }
 
-.iconVisible {
-    overflow: visible;
-    width: 36px;
+@media only screen and (max-width: 1600px) {
+    #byAliza {
+        margin-left: 15%;
+    }
 }
 
-.iconInvisible {
-    overflow: hidden; 
-    width: 0px;
-    padding: 0px;
-    border: none;
+@media only screen and (max-width: 1500px) {
+    #byAliza {
+        margin-left: 13%;
+    }
 }
 
-.widthmenu {
-    width: 100%;
+@media only screen and (max-width: 1400px) {
+    #byAliza {
+        margin-left: 11%;
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 1300px) {
+    #byAliza {
+        margin-left: 10%;
+        width: 400px;
+    }
 }
 
 
+@media only screen and (max-width: 1200px) {
+    #byAliza {
+        margin-left: 9%;
+        width: 375px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    #byAliza {
+        margin-left: 7%;
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #byAliza {
+        margin-left: 5%;
+        width: 300px;
+    }
+}
 
 @media only screen and (max-width: 900px) {
     .main {
@@ -141,6 +184,16 @@ h2 {
         padding: 2.5% 0%;
     }
 
+    #byAliza {
+        margin-left: 18%;
+        width: 50%;
+        min-width: 265px;
+    }
+
+    nav > a {
+        padding: 0%;
+    }
+
 }
 
 @media only screen and (max-width: 715px) {
@@ -150,19 +203,27 @@ h2 {
         align-content: space-between;
         margin: 0%;
         overflow: hidden;
-        width: 0px;
-        height: 0px;
-        padding-top: 25%;
+        visibility: hidden;
+        padding-top: 0%;
+        float: none;
     }
 
     nav > a {
-       width: 100%;
+      
        text-align: center;
-       margin: 5% 0%;
-       
+       margin: 5% auto;
+       overflow: hidden;
+       height: 0px;
     }
 
-    
+    #hamburger {
+        visibility: visible;
+        
+    }
+
+    #close {
+        margin: 32.62px -13.5%;
+    }
 
 
 }

@@ -21,10 +21,10 @@
     <img id='hamburger' src='./menu_white_24dp.svg' alt='menu' width='36px' onclick="openMenu()">
     <img id='close' class='iconInvisible' src='./close_white_24dp.svg' alt='close' width='36px' onclick="closeMenu()">
     <nav>
-      <a href='./index.html'>Home</a>
-      <a href='./collection.html'>Collection</a>
-      <a href='./about.html'>About</a>
-      <a href='./contact.html'>Contact</a>
+      <a id='link1' href='./index.html' style='font-family: MontserratMedium; border-bottom: 3px solid white;'>Home</a>
+      <a id='link2' href='./collection.html'>Collection</a>
+      <a id='link3' href='./about.html'>About</a>
+      <a id='link4' href='./contact.html'>Contact</a>
     </nav>
     <div class='main'>
       <div id='text'>
@@ -44,17 +44,17 @@
       </div>
       
     </div>
-    <script>if (screen.width > 715) {document.getElementById('hamburger').setAttribute('class', 'iconInvisible')}
-      window.addEventListener('resize', function adjust () {
-        closeMenu();
-        if (screen.width > 715) {
-          document.getElementById('hamburger').setAttribute('class', 'iconInvisible')
-        partialOpen()
-        } else {
-          document.getElementById('hamburger').setAttribute('class', 'iconVisible');
-      
-        }
-      })
+    <script>
+     window.addEventListener('resize', function doThis () {
+
+       if (screen.width > 715) {
+         
+         closeMenu()
+       } 
+
+       
+
+     })
     </script>
   </body>
 </html>
