@@ -25,7 +25,9 @@ function closeMenu () {
     let menu = document.getElementsByTagName('nav')[0];
     let close = document.getElementById('close');
     let hamburger = document.getElementById('hamburger');
+    let body = document.getElementsByTagName('body')[0]
     let h6 = document.getElementsByTagName('h6')[0];
+    body.removeAttribute('class', 'overflow')
     menu.removeAttribute('class', 'menu-visible');
     hamburger.removeAttribute('class', 'hidden');
     close.removeAttribute('class', 'visible');
@@ -36,10 +38,13 @@ function openMenu () {
     let menu = document.getElementsByTagName('nav')[0];
     let close = document.getElementById('close');
     let hamburger = document.getElementById('hamburger');
+    let body = document.getElementsByTagName('body')[0]
     let h6 = document.getElementsByTagName('h6')[0];
+    body.setAttribute('class', 'overflow')
     menu.setAttribute('class', 'menu-visible');
     hamburger.setAttribute('class', 'hidden');
     close.setAttribute('class', 'visible');
     linksFormat();
+
 }
 
