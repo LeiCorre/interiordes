@@ -1,6 +1,7 @@
 body {
     background-color: #181719;
     color: #FFFFFF;
+    overflow-x: hidden;
 }
 
 h6 {
@@ -242,7 +243,7 @@ h2 {
     }
 
     #close {
-        margin: 0px -12.5%;
+        margin: 0px -8.5%;
         position: sticky;
         position: -webkit-sticky;
         background-color:#181719;
@@ -257,13 +258,13 @@ h2 {
 
 @media only screen and (max-width: 650px) {
     #close {
-        margin: 0px -10.5%;
+        margin: 0px -9%;
     }
 }
 
 @media only screen and (max-width: 600px) {
     #close {
-        margin: 0px -10.5%;
+        margin: 0px -9.5%;
     }
 }
 
