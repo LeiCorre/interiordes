@@ -45,6 +45,5 @@ function openMenu () {
     hamburger.setAttribute('class', 'hidden');
     close.setAttribute('class', 'visible');
     linksFormat();
-
 }
 
