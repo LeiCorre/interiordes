@@ -260,6 +260,16 @@ h2 {
     }
 }
 
+
+
+@media only screen and (max-height: 775px) {
+    
+    .menu-visible {
+        padding-top: 20%;
+    }
+
+}
+
 @media only screen and (max-height: 650px) {
     .visibleNava {
         padding: 0% 0px;
