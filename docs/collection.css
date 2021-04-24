@@ -1,0 +1,12 @@
+.gallery {
+    display: flexbox; 
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+
+.gallery > img {
+    padding: 5px;
+    width: 50%;
+}
+

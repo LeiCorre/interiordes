@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel='stylesheet' href='./fonts/fonts.css'>
+    <link rel='stylesheet' href='./styles.css'>
+    <script src='./script.js'></script>
+  
+ 
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -10,9 +15,32 @@
 
     <title>Interior Design</title>
 
-  
   </head>
   <body>
-    
+    <h6>THIS INTERIOR</h6>
+    <img id='hamburger' src='./menu_white_24dp.svg' alt='menu' width='36px' onclick="openMenu()">
+    <img id='close' class='iconInvisible' src='./close_white_24dp.svg' alt='close' width='36px' onclick="closeMenu()">
+    <nav>
+      <a id='link1' href='./index.html' >Home</a>
+      <a id='link2' href='./collection.html' >Collection</a>
+      <a id='link3' href='./about.html' style='font-family: MontserratMedium; border-bottom: 3px solid white;'>About</a>
+      <a id='link4' href='./contact.html' >Contact</a>
+    </nav>
+    <div class='gallery'>
+
+      
+    </div>
+    <script>
+     window.addEventListener('resize', function doThis () {
+
+       if (screen.width > 715) {
+         
+         closeMenu()
+       } 
+
+       
+
+     })
+    </script>
   </body>
 </html>

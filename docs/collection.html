@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel='stylesheet' href='./fonts/fonts.css'>
+    <link rel='stylesheet' href='./styles.css'>
+    <link rel='stylesheet' href='./collection.css'>
+    <script src='./script.js'></script>
+  
+ 
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -10,9 +16,43 @@
 
     <title>Interior Design</title>
 
-  
   </head>
   <body>
-    
+    <h6>THIS INTERIOR</h6>
+    <img id='hamburger' src='./menu_white_24dp.svg' alt='menu' width='36px' onclick="openMenu()">
+    <img id='close' class='iconInvisible' src='./close_white_24dp.svg' alt='close' width='36px' onclick="closeMenu()">
+    <nav>
+      <a id='link1' href='./index.html' >Home</a>
+      <a id='link2' href='./collection.html' style='font-family: MontserratMedium; border-bottom: 3px solid white;'>Collection</a>
+      <a id='link3' href='./about.html'>About</a>
+      <a id='link4' href='./contact.html'>Contact</a>
+    </nav>
+    <div class='main'>
+      <div class='gallery'>
+        <img src='./gallerypics/pexels-atbo-245208.jpg' alt='photo1'>
+        <img src='./gallerypics/pexels-max-vakhtbovych-5997967.jpg' alt='photo2'>
+        <img src='./gallerypics/pexels-max-vakhtbovych-5998041.jpg' alt='photo3'>
+        <img src='./gallerypics/pexels-max-vakhtbovych-6312353.jpg' alt='photo4'>
+        <img src='./gallerypics/pexels-max-vakhtbovych-6312362.jpg' alt='photo5'>
+        <img src='./gallerypics/pexels-max-vakhtbovych-6394514.jpg' alt='photo6'>
+        <img src='./gallerypics/pexels-rachel-claire-5490363.jpg' alt='photo7'>
+        <img src='./gallerypics/pexels-skylar-kang-6045333.jpg' alt='photo8'>
+        <img src='./gallerypics/pexels-tatiana-syrikova-3932930.jpg' alt='photo9'>
+        <img src='./gallerypics/pexels-vecislavas-popa-1643383.jpg' alt='photo10'>
+      </div>
+      
+    </div>
+    <script>
+     window.addEventListener('resize', function doThis () {
+
+       if (screen.width > 715) {
+         
+         closeMenu()
+       } 
+
+       
+
+     })
+    </script>
   </body>
 </html>
