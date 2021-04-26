@@ -73,6 +73,8 @@ body {
     .filler {
         grid-column: 1 / span 8;
         grid-row: 4 / span 1;
+        width: 100%;
+        margin: 0%;
     }
 
     .photo1, .photo2, .photo3, .photo4, .photo5, .photo6, .photo7, .photo8 {
@@ -146,32 +148,67 @@ body {
 }
 
 @media only screen and (max-width: 500px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        
+    }
+    
+    .photo1, .photo2, .photo3, .photo4 {
+        grid-row: 1 / span 1;
+    }
+
+    .photo3, .photo4 {
+        grid-row: 2 / span 1;
+    }
+
+    .photo5, .photo6, .photo7, .photo8 {
+        grid-row: 3 / span 1;
+    }
+
+    .photo7, .photo8 {
+        grid-row: 4 / span 1;
+    }
+
     .view {
-        margin: -24.5% 0%;
+        grid-row: 5 / span 1;
+        grid-column: 1 / span 2;
+        margin: -18.5% 0%;
+    }
+
+    .filler {
+        grid-row: 6 / span 1;
+        grid-column: 1 / span 2;
+    }
+
+   
+
+    .mainC {
+        width: 95%;
     }
 }
 
 @media only screen and (max-width: 450px) {
     .view {
-        margin: -31.5% 0%;
+        margin: -27.5% 0%;
     }
 }
 
 @media only screen and (max-width: 400px) {
     .view {
-        margin: -34.5% 0%;
+        margin: -30.5% 0%;
     }
 }
 
 @media only screen and (max-width: 350px) {
     .view {
-        margin: -47% 0%;
+        margin: -43% 0%;
     }
 }
 
 @media only screen and (max-width: 300px) {
     .view {
-        margin: -50% 0%;
+        margin: -46% 0%;
     }
 }
 
