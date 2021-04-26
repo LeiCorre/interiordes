@@ -1,3 +1,7 @@
+body {
+    min-width: 300px;
+}
+
 .mainC {
     clear: both;
     width: 90%;
@@ -14,7 +18,7 @@
 }
 
 
-.gallery > img {
+.photo1, .photo2, .photo3, .photo4, .photo5, .photo6, .photo7, .photo8 {
     margin: 2%;
     width: 98%;
     line-height: 1.6;
@@ -28,6 +32,7 @@
     width: 98%;
     line-height: 1.6;
     text-align: justify;
+    padding-top: 7.5vmin;
     
 }
 
@@ -36,8 +41,25 @@
     grid-row: 1 /span 3;
     background-image: url(./gallerypics/picture5.jpg);
     background-repeat: no-repeat;
-    
-    
+    background-position: center;
+    background-size: contain;
+    height: 40vmax;
+}
+
+
+@media only screen and (max-width: 1800px) {
+    .view {
+        grid-column: 1 / span 8;
+        grid-row: 1 / span 1;
+        height: 50vmax;
+        
+    }
+
+    .filler {
+        grid-column: 1 / span 8;
+        grid-row: 2 / span 1;
+        padding-top: 0;
+    }
 }
 
 @media only screen and (max-width: 920px) {
@@ -45,6 +67,7 @@
         grid-column: 1 / span 8;
         grid-row: 2 / span 2;
         height: 500px;
+        
     }
     
     .filler {
@@ -52,9 +75,105 @@
         grid-row: 4 / span 1;
     }
 
-    .gallery > img {
+    .photo1, .photo2, .photo3, .photo4, .photo5, .photo6, .photo7, .photo8 {
         grid-row: 1 / span 1;
     }
 }
+
+
+@media only screen and (max-width: 850px) {
+    .view {
+        margin: -.5% 0%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .gallery {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+    }
+    
+    .photo1, .photo2, .photo3, .photo4 {
+        grid-row: 1 / span 1;
+    }
+
+    .photo5, .photo6, .photo7, .photo8 {
+        grid-row: 2 / span 1;
+    }
+
+    .view {
+        margin: -2.5% 0%;
+        grid-row: 3 / span 1;
+        grid-column: 1 / span 4;
+    }
+
+    .filler {
+        grid-row: 4 / span 1;
+        grid-column: 1 / span 4;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .view {
+        margin: -5% 0%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .view {
+        margin: -7.5% 0%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .view {
+        margin: -11% 0%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .view {
+        margin: -14% 0%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .view {
+        margin: -19.5% 0%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .view {
+        margin: -24.5% 0%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .view {
+        margin: -31.5% 0%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .view {
+        margin: -34.5% 0%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .view {
+        margin: -47% 0%;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .view {
+        margin: -50% 0%;
+    }
+}
+
 
 
