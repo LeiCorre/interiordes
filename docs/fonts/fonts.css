@@ -54,6 +54,6 @@ h2 {
     font-weight: 700;
 }
 
-.filler {
+.filler, #form {
     font-family: MontserratLight;
 }

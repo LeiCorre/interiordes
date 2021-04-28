@@ -3,6 +3,7 @@
   <head>
     <link rel='stylesheet' href='./fonts/fonts.css'>
     <link rel='stylesheet' href='./styles.css'>
+    <link rel='stylesheet' href='./contactstyle.css'>
     <script src='./script.js'></script>
   
  
@@ -26,21 +27,30 @@
       <a id='link3' href='./about.html' >About</a>
       <a id='link4' href='./contact.html' style='font-family: MontserratMedium; border-bottom: 3px solid white;'>Contact</a>
     </nav>
-    <div class='gallery'>
+    <div class='mainContact'>
+      <form id='form' action='mailto: no@email.com'>
+        <label for='name' >Full Name:</label> <br>
+        <input type='text' required placeholder="Full Name" id='name' name='name'><br><br>
+        <label for='email'>Email:</label> <br>
+        <input type='text' required placeholder="example@email.com" id='email' name='email'><br><br>
+        What are you wishing to inquire about? <br><br>
+        <input type='radio' id='consultation' name='consultation' value='Consultation'>
+        <label for='consultation' >Book a Consultation</label><br>
+        <input type='radio' id='2nd' name='2ndOp' value='2ndOption'>
+        <label for='2ndOp' >2nd Option</label><br>
+        <input type='radio' id='3rd' name='3rdOp' value='3rdOption'>
+        <label for='3rdOp' >3rd Option</label><br>
+        <input type='radio' id='general' name='Inquiries' value='General Inquiries'>
+        <label for='Inquiries' >General Inquiries</label><br>
+        <label for='' ></label><br>
+        <textarea id='message' required name='message' rows='10' cols='75'>Hey Friend! Write your message here.
+        </textarea><br><br>
+        <input type='submit' value='Submit'>
+      </form>
 
+      <img id='designpic' src='./contactdesign.jpg' alt='design'>
       
     </div>
-    <script>
-     window.addEventListener('resize', function doThis () {
-
-       if (screen.width > 715) {
-         
-         closeMenu()
-       } 
-
-       
-
-     })
-    </script>
+   
   </body>
 </html>
